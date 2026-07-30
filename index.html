@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOXIE_E — Your Quote. Your Style.</title>
+    <meta name="description" content="BOXIE_E — brand streetwear kaos boxy oversized dengan quotes khas Gen Z. Custom design tersedia." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================ -->
+    <!-- LOADING SCREEN -->
+    <!-- ============================================================ -->
+    <div id="loader" class="loader">
+      <img src="assets/logo.png" alt="BOXIE_E" class="loader__logo" />
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCROLL PROGRESS INDICATOR -->
+    <!-- ============================================================ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION BAR -->
+    <!-- ============================================================ -->
+    <header class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="#beranda" class="navbar__brand">
+          <img src="assets/logo.png" alt="BOXIE_E logo" class="navbar__logo" />
+          <span class="navbar__wordmark">BOXIE<span class="accent">_E</span></span>
+        </a>
+
+        <nav class="navbar__menu" id="navMenu">
+          <ul class="navbar__list">
+            <li><a href="#beranda" class="navbar__link is-active" data-link>Beranda</a></li>
+            <li><a href="#tentang" class="navbar__link" data-link>Tentang</a></li>
+            <li><a href="#koleksi" class="navbar__link" data-link>Koleksi</a></li>
+            <li><a href="#keunggulan" class="navbar__link" data-link>Keunggulan</a></li>
+            <li><a href="#proses" class="navbar__link" data-link>Cara Pemesanan</a></li>
+            <li><a href="#testimoni" class="navbar__link" data-link>Testimoni</a></li>
+            <li><a href="#kontak" class="navbar__link" data-link>Kontak</a></li>
+          </ul>
+          <a href="#kontak" class="btn btn--outline navbar__cta">Custom Design</a>
+        </nav>
+
+        <button class="navbar__burger" id="burgerBtn" aria-label="Buka menu navigasi"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+      <!-- ============================================================ -->
+      <!-- SECTION 1 — HERO -->
+      <!-- ============================================================ -->
+      <section id="beranda" class="hero">
+        <div class="hero__inner reveal">
+          <div class="hero__logo-side">
+            <img src="assets/logo.png" alt="BOXIE_E" class="hero__logo" />
+          </div>
+          <div class="hero__text-side">
+            <span class="eyebrow">BOXIE_E STREETWEAR CO.</span>
+            <h1 class="hero__headline">
+              YOUR QUOTE.<br />
+              <span class="accent">YOUR STYLE.</span>
+            </h1>
+            <p class="hero__desc">BOXIE_E menghadirkan kaos boxy oversized bergaya streetwear dengan quotes khas Gen Z sebagai media ekspresi diri melalui fashion.</p>
+            <div class="hero__actions">
+              <a href="#koleksi" class="btn btn--primary">Lihat Koleksi</a>
+              <a href="#kontak" class="btn btn--ghost">Custom Design</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-hint">
+          <span>Scroll</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 2 — TENTANG BOXIE_E -->
+      <!-- ============================================================ -->
+      <section id="tentang" class="about">
+        <div class="about__inner">
+          <div class="about__image reveal">
+            <img src="assets/about.jpg" alt="Detail produk BOXIE_E" loading="lazy" />
+          </div>
+          <div class="about__content reveal">
+            <span class="eyebrow">Tentang Kami</span>
+            <h2 class="section-title">Streetwear yang<br />Mewakili <span class="accent">Dirimu</span></h2>
+            <p class="about__desc">
+              BOXIE_E adalah brand streetwear yang menghadirkan kaos boxy oversized dengan clean look dan quotes khas Gen Z. Menggunakan bahan premium yang nyaman dipakai serta menyediakan layanan custom design agar setiap pelanggan dapat
+              memiliki desain sesuai karakter mereka.
+            </p>
+            <a href="#proses" class="link-arrow">Lihat cara pemesanan <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 3 — KOLEKSI PRODUK -->
+      <!-- ============================================================ -->
+      <section id="koleksi" class="collection">
+        <div class="section-header reveal">
+          <span class="eyebrow">Drop Terbaru</span>
+          <h2 class="section-title">Koleksi <span class="accent">BOXIE_E</span></h2>
+        </div>
+
+        <div class="collection__grid">
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <img src="assets/product1.jpg" alt="Favorite Problem Tee - BOXIE_E" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Favorite Problem Tee</h3>
+              <p class="product-card__desc">Humor yang playful dengan sentuhan streetwear modern untuk mengekspresikan hubungan yang penuh karakter.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rp159.000</span>
+                <button class="btn btn--small btn--primary" data-product="Favorite Problem Tee" data-image="assets/product1.jpg" data-price="Rp159.000" data-desc="Humor yang playful dengan sentuhan streetwear modern...">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <img src="assets/product2.jpg" alt="She Bites Tee - BOXIE_E" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">She Bites Tee</h3>
+              <p class="product-card__desc">Statement berani dengan desain minimalis yang siap mencuri perhatian di setiap penampilan.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rp159.000</span>
+                <button class="btn btn--small btn--primary" data-product="Favorite Problem Tee" data-image="assets/product1.jpg" data-price="Rp159.000" data-desc="Humor yang playful dengan sentuhan streetwear modern...">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <img src="assets/product3.jpg" alt="Expensive Tee - BOXIE_E" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Expensive Tee</h3>
+              <p class="product-card__desc">Typography modern dengan pesan percaya diri yang mencerminkan karakter dan gaya hidup masa kini.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rp159.000</span>
+                <button class="btn btn--small btn--primary" data-product="Favorite Problem Tee" data-image="assets/product1.jpg" data-price="Rp159.000" data-desc="Humor yang playful dengan sentuhan streetwear modern...">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 4 — MENGAPA MEMILIH BOXIE_E -->
+      <!-- ============================================================ -->
+      <section id="keunggulan" class="features">
+        <div class="section-header reveal">
+          <span class="eyebrow">Kenapa Kami</span>
+          <h2 class="section-title">Mengapa Memilih <span class="accent">BOXIE_E</span>?</h2>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-shirt"></i></div>
+            <h3>Desain Streetwear Modern</h3>
+            <p>Siluet boxy oversized dengan potongan clean, dirancang mengikuti tren fashion jalanan masa kini.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-quote-right"></i></div>
+            <h3>Quotes Khas Gen Z</h3>
+            <p>Kalimat-kalimat relate dan penuh karakter, jadi media ekspresi diri lewat apa yang kamu pakai.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Premium Cotton</h3>
+            <p>Bahan cotton premium yang tebal, nyaman, dan tetap adem dipakai seharian.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Custom Design</h3>
+            <p>Punya konsep sendiri? Tim kami bantu wujudkan desain sesuai karakter dan gaya kamu.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-box"></i></div>
+            <h3>Sistem Pre Order</h3>
+            <p>Setiap produk diproduksi dengan detail terjaga melalui sistem pre order.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-venus-mars"></i></div>
+            <h3>Unisex</h3>
+            <p>Fit oversized yang cocok dipakai siapa saja, tanpa batasan gender.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 5 — PROSES PEMESANAN -->
+      <!-- ============================================================ -->
+      <section id="proses" class="process">
+        <div class="section-header reveal">
+          <span class="eyebrow">Alur Belanja</span>
+          <h2 class="section-title">Proses <span class="accent">Pemesanan</span></h2>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__step reveal">
+            <div class="process__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <span class="process__number">01</span>
+            <h3>Pemesanan</h3>
+            <p>Customer melakukan pemesanan melalui Website atau WhatsApp.</p>
+          </div>
+          <div class="process__connector" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="process__step reveal">
+            <div class="process__icon"><i class="fa-solid fa-gears"></i></div>
+            <span class="process__number">02</span>
+            <h3>Produksi</h3>
+            <p>Tim BOXIE_E memproduksi pesanan sesuai desain yang dipilih atau custom design pelanggan.</p>
+          </div>
+          <div class="process__connector" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="process__step reveal">
+            <div class="process__icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <span class="process__number">03</span>
+            <h3>Pengiriman</h3>
+            <p>Produk selesai diproduksi dan dikirim ke alamat pelanggan.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 6 — TESTIMONI -->
+      <!-- ============================================================ -->
+      <section id="testimoni" class="testimonials">
+        <div class="section-header reveal">
+          <span class="eyebrow">Voice of Boxie</span>
+          <h2 class="section-title">Apa Kata <span class="accent">Pelanggan Kami?</span></h2>
+        </div>
+
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <img src="assets/logo.png" alt="Foto pelanggan" class="testimonial-card__avatar" />
+              <div class="testimonial-card__rating">★★★★★</div>
+              <p class="testimonial-card__text">"Bahannya tebal banget dan potongan boxy-nya pas, gak keliatan norak. Quotes di belakangnya juga relate sama aku."</p>
+              <span class="testimonial-card__name">Raka Pratama</span>
+            </div>
+
+            <div class="testimonial-card">
+              <img src="assets/logo.png" alt="Foto pelanggan" class="testimonial-card__avatar" />
+              <div class="testimonial-card__rating">★★★★★</div>
+              <p class="testimonial-card__text">"Custom design-nya smooth, tim BOXIE_E responsif dan hasilnya sesuai ekspektasi. Definitely repeat order."</p>
+              <span class="testimonial-card__name">Sabrina Dewi</span>
+            </div>
+
+            <div class="testimonial-card">
+              <img src="assets/logo.png" alt="Foto pelanggan" class="testimonial-card__avatar" />
+              <div class="testimonial-card__rating">★★★★★</div>
+              <p class="testimonial-card__text">"Baru pertama beli langsung suka. Fit-nya oversized tapi tetap rapi, cocok buat daily outfit maupun hangout."</p>
+              <span class="testimonial-card__name">Fajar Nugraha</span>
+            </div>
+
+            <div class="testimonial-card">
+              <img src="assets/logo.png" alt="Foto pelanggan" class="testimonial-card__avatar" />
+              <div class="testimonial-card__rating">★★★★★</div>
+              <p class="testimonial-card__text">"She Bites Tee jadi favorit di lemari aku. Statement-nya berani tapi tetap classy. Worth the price!"</p>
+              <span class="testimonial-card__name">Aulia Rahman</span>
+            </div>
+          </div>
+
+          <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 7 — KONTAK -->
+      <!-- ============================================================ -->
+      <section id="kontak" class="contact">
+        <div class="contact__inner">
+          <div class="contact__info reveal">
+            <span class="eyebrow">Get In Touch</span>
+            <h2 class="section-title">Hubungi <span class="accent">BOXIE_E</span></h2>
+            <p class="contact__desc">Ada pertanyaan soal produk atau mau custom design? Hubungi kami lewat channel di bawah ini.</p>
+
+            <ul class="contact__list">
+              <li>
+                <a href="https://wa.me/+6282279395684" target="_blank" rel="noopener">
+                  <span class="contact__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                  <span>
+                    <strong>WhatsApp</strong>
+                    <small>+62 822-7939-5684</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/boxie__e?igsh=MTdja2c2ZzlwNjYzcg==" target="_blank" rel="noopener">
+                  <span class="contact__icon"><i class="fa-brands fa-instagram"></i></span>
+                  <span>
+                    <strong>Instagram</strong>
+                    <small>@boxie_e</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://vm.tiktok.com/ZS9hdHF9peHoF-KkEoN/" target="_blank" rel="noopener">
+                  <span class="contact__icon"><i class="fa-brands fa-tiktok"></i></span>
+                  <span>
+                    <strong>TikTok</strong>
+                    <small>@boxie_e</small>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="dewarastine@gmail.com">
+                  <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+                  <span>
+                    <strong>Email</strong>
+                    <small>dewarastine@gmail.com</small>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap kamu" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Kirim Pesan</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="#beranda" class="footer__brand">
+          <img src="assets/logo.png" alt="BOXIE_E" class="footer__logo" />
+          <span>BOXIE<span class="accent">_E</span></span>
+        </a>
+
+        <nav class="footer__nav">
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#koleksi">Koleksi</a>
+          <a href="#keunggulan">Keunggulan</a>
+          <a href="#proses">Cara Pemesanan</a>
+          <a href="#testimoni">Testimoni</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/boxie__e?igsh=MTdja2c2ZzlwNjYzcg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://vm.tiktok.com/ZS9hdHF9peHoF-KkEoN/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/+6282279395684" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> BOXIE_E. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- FLOATING BUTTONS -->
+    <!-- ============================================================ -->
+    <a href="https://wa.me/+6282279395684" target="_blank" rel="noopener" class="float-btn float-btn--whatsapp" aria-label="Chat WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button class="float-btn float-btn--top" id="backToTop" aria-label="Kembali ke atas">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="product-modal" id="productModal" aria-hidden="true">
+      <div class="product-modal__overlay" id="productModalOverlay"></div>
+      <div class="product-modal__dialog" role="dialog" aria-modal="true">
+        <button class="product-modal__close" id="productModalClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="product-modal__image">
+          <img src="" alt="" id="productModalImage" />
+        </div>
+        <div class="product-modal__body">
+          <h3 id="productModalName"></h3>
+          <p id="productModalDesc"></p>
+          <span class="product-modal__price" id="productModalPrice"></span>
+          <a href="#" target="_blank" class="btn btn--primary btn--full" id="productModalOrder"> <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
